@@ -17,7 +17,7 @@ fn main() {
         today_tips: 0.0,
     };
 
-    let mut exists = Path::new("data.txt").exists();
+    let exists = Path::new("data.txt").exists();
     if exists {
         import_data(&mut data);
         ask_to_change_wage(&mut data);
